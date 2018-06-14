@@ -1,18 +1,23 @@
-/* Basic stuff ----------------------------------------------*/
 html{
-  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  font-size: 100%;
   text-rendering: optimizeLegibility;
   line-height: 1.2em;
   color: black;
   background: #1368FF;
+  font-family: 'Roboto', sans-serif;
   font-kerning: normal;
 }
 
-input[type=checkbox].menu-btn {
-   display:none;
+@media (min-width: 40em) {
+ html {font-size: 112.5%;}
 }
 
-/* mobiles --------------------------------------------------*/
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+/* mobiles */
 body{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -21,6 +26,8 @@ body{
   grid-template-areas:
   "header header header header header header"
   "nav nav nav nav nav nav"
+  "main main main main main main"
+  "section section section section section section"
   "footer footer footer footer footer footer";
 }
 
@@ -30,7 +37,46 @@ body{
   padding: 15px 15px;
 }
 
-/* Hamburger menu ----------------*/
+#active{
+  color: #3bbced;
+}
+
+/* menu */
+.nav .menu{
+  background-color: black;
+  clear:both;
+  height: 0px;
+  padding: 0 15%;
+  transition: height 0.25s ease-out;
+}
+
+.header{
+  grid-area: header;
+  background-color: black;
+  height: 55px;
+  z-index: 9999;
+}
+
+input[type=checkbox].menu-btn {
+   display:none;
+}
+
+/* desktops/tablets  */
+@media screen and (min-width:760px){
+  body{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+    margin: 0 auto;
+    grid-template-areas:
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+  }
+}
+
+/* Hamburger menu */
 .nav .menu-icon{
   cursor: pointer;
   display: inline-block;
@@ -96,17 +142,7 @@ body{
   top: 0;
 }
 
-/* menu ----------------------*/
-.nav .menu{
-  background-color: black;
-  clear:both;
-  height: 0px;
-  padding: 0 15%;
-  transition: height 0.25s ease-out;
-}
-
-/* navigation ----------------------------------------------*/
-.nav{
+nav{
   grid-area: nav;
   font-weight: bold;
   text-transform: uppercase;
@@ -115,7 +151,7 @@ body{
   height: 55px;
   grid-row: 1;
   color:white;
-
+  z-index: 4;
 }
 
 .nav ul{
@@ -142,9 +178,6 @@ body{
     color: #3bbced;
 }
 
-#active{
-  color: #3bbced;
-}
 
 .divider {
   text-align: left;
@@ -164,37 +197,29 @@ body{
    margin-top: -20px;
 }
 
-/* desktops/tablets ----------------------------------------*/
-@media screen and (min-width:760px){
-  body{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(70px, auto);
-    margin: 0 auto;
-    grid-template-areas:
-    "header header header header header header"
-    "nav nav nav nav nav nav"
-    "footer footer footer footer footer footer";
+
+@media (min-width: 760px) {
+  .header{
+    height: 70px;
   }
 
-/* navigation ---------------------*/
-  header{
-    grid-area: header;
-    background-color:blue/*rgba(0, 0, 0, 0.25);*/
-
-    height: 70px;
+  .header a{
+    display: block;
+    height: 100%;
+    line-height: 70px;
   }
 
   .logo img{
     height: 32.75px;
     width: 110px;
+  padding-left: 20%;
   }
 
   .nav{
     font-weight: 300;
     font-size: 13px;
     color:white;
-    background-color: transparent;
+    background-color:transparent;
     height: 70px;
   }
 
@@ -232,24 +257,19 @@ body{
 }
 
 main{
+  grid-area: main;
+  grid-row: 1;
 
+  z-index: 3;
+}
+@media (min-width: 760px) {
 }
 
-
-section .hero{
-grid-column: 1/7;
-grid-row: 1;
-position: relative;
-}
-
-.section-img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
+section {
 }
 
 footer{
   grid-area: footer;
   background: #3bbced;
   height:auto;
-}
+} /* */ */
