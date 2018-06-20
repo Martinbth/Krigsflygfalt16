@@ -273,3 +273,12 @@ footer{
   background: #3bbced;
   height:auto;
 } /* */ */
+
+
+
+
+<section class="hero">
+<img class="section-img" src="../resources/media/index_bk.jpg" alt=" " />
+  <h1>Välkommen</h1>
+  <h3>Här kan du kolla en massa saker!</h3>
+</section>
