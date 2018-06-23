@@ -175,14 +175,15 @@ body{
 
 /* main ------------------------*/
 main{
+  grid-area: main;
   grid-column: 1/7;
-  grid-row: 1/4;
+  grid-row: 1;
   background-color: red;
 }
 
 /* SECTION: hero ---------------*/
-main .section-hero{
-  height: 50vh;
+main article>section{
+  height: 100%;
   max-width: 760px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -192,6 +193,15 @@ main .section-hero{
   justify-self: center;
 }
 
+#article-hero {
+    background-image: url(../media/index_bk.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+
+}
 .section-hero .hero-txt{
   grid-row: 3/5;
   grid-column: 1/5;
@@ -210,16 +220,25 @@ main .section-hero{
 .hero-txt h2{
   font-size: 20px;
   font-weight: 300;
+  margin-top: -50px;
   line-height: 1.4em;
 }
 /* SECTION: News ----------------*/
-  .main .section-news{
+  #article-news{
+    background-color: white;
+    height: 600px;
+  }
 
-    max-width: 760px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
+  .section-news h1{
+    font-size: 40px;
+
+    text-align: center;
+    grid-column: 2/4;
+
+  }
+
+ .section-news{
+
   }
 /* footer -----------------------*/
 footer{
@@ -242,13 +261,22 @@ footer{
     "footer footer footer footer footer footer";
   }
 /* main ------------------------*/
+  #article-hero{
+    height: 90vh;
+  }
+
   main .section-hero{
     margin: 0 auto;
+  }
+
+  main .section-news{
+      margin: 0 auto;
   }
 
   .section-hero .hero-txt{
     grid-column: 1/5;
   }
+
 
 /* footer ----------------------*/
   footer{
@@ -292,7 +320,6 @@ footer{
     margin-top: 0px;
   }
 
-
   .nav li {
     float: left;
   }
@@ -327,7 +354,7 @@ footer{
   .logo img{
     height: 32.75px;
     width: 110px;
-    padding-top: 0px;
+    padding-top: 3px;
   }
 
 }
@@ -341,7 +368,7 @@ footer{
     min-width: 992px;
   }
   .section-hero h1{
-    font-size: 70px;
+    font-size: 69px;
     white-space: nowrap;
   }
 }
