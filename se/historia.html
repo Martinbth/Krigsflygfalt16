@@ -9,18 +9,20 @@
     <title>Krigsflygfalt 16</title>
     <link rel="stylesheet" type="text/css" href="../resources/css/grid.css">
 
-    <script src="../resources/js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Stardos+Stencil" rel="stylesheet">
+<script src="../resources/js/script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=initMap" async defer
+      ></script>
 
   </head>
 
   <body id="body">
-    <header role="banner" class="header">
+    <header role="banner" class="header" id="header-alt">
     </header>
       <nav role="navigation" class="nav">
         <a href="index.html" class="logo">
@@ -31,8 +33,7 @@
           <span class="nav-icon"></span>
         </label>
         <ul class="menu">
-
-                <li><a href="historia.html">Historia</a></li>
+                <li><a href="historia.html" id="active-site">Historia</a></li>
                 <li><a href="#">Aktiviteter</a></li>
                 <li><a href="hitta-hit.html">Hitta hit</a></li>
                 <li role="separator" class="divider"></li>
@@ -42,67 +43,51 @@
       </nav>
 
     <main>
-      <article role="hero" id="article-hero">
+      <article role="hero" id="article-hero-historia">
         <section class="section-hero">
-          <span class="hero-txt">
-            <h1>Krigsflygfält 16 / Brattforsheden</h1>
-            <h2>Under åren 1939 till 1943 byggdes 40 krigsflygfält runt om i Sverige.</br> Idag finns bara ett Krigsflygfält bevarat</h2>
-          </span>
-        </section>
+
+              <span class="hero-txt">
+                <h1>Historiska dokument</h1>
+                <h2></h2>
+              </span>
+            </section>
+
       </article>
 
-      <article role="nyheter" id="article-news">
-        <section role="nyheter" class="section-news">
-          <span class="section-titel">
-            <h1>Nyfiken?</h1>
-            <h2>Börja ta del av Sveriges sista krigsflygfält från andra världskriget.</h2>
+      <article role="Hitta hit" id="article-news-alt">
+        <section role="Hitta hit" class="section-news">
+          <span class="section-titel-alt">
+            <h1>Historiska dokument</h1>
+            <h2>När anläggandet av krigsflygfälten runt om i landet startade var det något som skulle ske i största hemlighet. Flygvörvaltningens föreskrifter i sekretesshänseende meddelades berörda entreprenörer i en skrivelse.
+Vid arbetsplats nr 16 där Aktiebolaget Vägförbättringar utförde arbetena inträffade ett fall som Säkerhetschefen översände till chefen för flygvapnet för ett yttrande. Entreprenören avgav följande rapport till Flygstaben över det inträffade.</h2>
           </span>
 
-          <article id="news-article-1">
-
-            <span id="news-article-txt">
-              <img alt="krigsflygfält 16 logo" src="../resources/media/trekking.png" />
-              <h1>
-                AKTIVITETER
-              </h1>
-              <h2>
-                <a href="#">
-                  Läs mer &#8594;
-              </a>
-              </h2>
-            </span>
-          </article>
-
-          <article id="news-article-2">
-
-            <span id="news-article-txt">
-                  <img alt="krigsflygfält 16 logo" src="../resources/media/location_white.png" />
-              <h1>
-                Hitta hit
-              </h1>
-              <h2>
-                <a href="#">
-                Läs mer &#8594;
-              </a>
-              </h2>
-            </span>
-          </article>
-
-        <article id="news-article-3">
-          <span id="news-article-txt">
-                <img alt="krigsflygfält 16 logo" src="../resources/media/inbox_white.png" />
-            <h1>
-              Historia
-            </h1>
-            <h2>
-              <a href="#">
-              Läs mer &#8594;
-            </a>
-            </h2>
+          <article id="news-article-alt-1">
+          <span id="news-article-txt-alt">
+            <h2>Bil</h2>
+            <h3><b>Från Karlstad</b> väg 63 mot Filipstad (ca 40 km) > 6 km norr Lindfors avtagsväg till höger > Krigsflygfält 2 km > Flygplats 2 km.
+            <h3><b>Från Filipstad</b>  väg 63 mot  Karlstad (ca 18 km) > 7,5 km söder Brattfors avtagsväg till vänster > Krigsflygfält 2 km.Flygplats 2 km.<br>
+              Parkeringsplatser finns utanför entrén från sjösidan. Parkeringsplatser för rörelsehindrade finns utanför huvudentrén och entrén från sjösidan. Taxi kan köra ända fram till båda entréerna.</h3>
           </span>
+
+          <span id="news-article-txt-alt">
+            <h2>Cykel</h2>
+            <h3>Parkeringsplatser finns utanför entrén från sjösidan. Parkeringsplatser för rörelsehindrade finns utanför huvudentrén och entrén från sjösidan. Taxi kan köra ända fram till båda entréerna.</h3>
+          </span>
+
+          <span id="news-article-txt-alt">
+            <h2>Buss</h2>
+            <h3>Parkeringsplatser finns utanför entrén från sjösidan. Parkeringsplatser för rörelsehindrade finns utanför huvudentrén och entrén från sjösidan. Taxi kan köra ända fram till båda entréerna.</h3>
+          </span>
+
+          </article>
+        <article id="news-article-alt-2">
+          <img alt="krigsflygfält 16 logo" src="../resources/media/googlemaps.png" />
+        <a href="https://www.google.com/maps/search/?api=1&zoom=12&query=brattforshedens+flygplats"> Vidare till Google maps &#8594; </a>
+          </article>
+
+          </article>
         </article>
-        </artice>
-      </section>
     </main>
 
 
@@ -147,20 +132,10 @@
             <h1><li>Turistinformation</li></h1>
               <li>Karlstads turistbyrå.<a href="tel:+46-058-540-2770" rel="nofollow"> 054-540 24 70</a></li>
               <li>Filipstad Turistbyrå.<a href="tel:+46-059-613-54" rel="nofollow"> 0590-613 54</a></li>
-
             </ul>
-
           </span>
-
-
-
-
-
-
-
         </section>
       </article>
     </footer>
   </body>
-
 </html>
