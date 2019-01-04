@@ -334,7 +334,7 @@ article>section{
   grid-column: 1/5;
 }
 
-#news-article-txt{
+.news-article-txt{
   bottom: 0;
   top:0;
   padding: 10px;
@@ -342,7 +342,7 @@ article>section{
   color: white;
 }
 
-#news-article-txt img{
+.news-article-txt img{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -350,24 +350,24 @@ article>section{
   min-width: 91.21px;
 }
 
-#news-article-txt h1{
+.news-article-txt h1{
   font-weight: 700;
   font-size:calc(12px + 1.7vw);
   line-height: 0;
   color: #f3d162;
 }
 
-#news-article-txt h2{
+.news-article-txt h2{
   font-weight: 400;
   font-size:calc(13px + 0.3vw);
   line-height: 0;
 }
 
-#news-article-txt-alt{
+.news-article-txt-alt{
   margin-bottom: 20px;
 }
 
-#news-article-txt-alt h2{
+.news-article-txt-alt h2{
   font-size: 18px;
   font-weight: 400;
   color: black;
@@ -375,14 +375,14 @@ article>section{
   margin-bottom:0px;
 }
 
-#news-article-txt-alt h3{
+.news-article-txt-alt h3{
   font-weight: 300;
   font-size: 18px;
   margin-top:0px;
   color: #212121;
 }
 
-#news-article-txt h3{
+.news-article-txt h3{
   font-weight: 400;
   top:0;
 }
@@ -438,6 +438,7 @@ footer{
 
 #footer-logo{
 display:inline-block;
+float: left;
 }
 
 /* Google Maps ----------------------------------------------------*/
