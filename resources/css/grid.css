@@ -163,6 +163,11 @@ body{
   display:none;
   transition: all .2s ease-out;
 }
+#label-desc{
+  display: none;
+
+
+}
 
 .nav .menu-btn:checked ~ .menu{
   background-color: #181d24;
@@ -319,6 +324,7 @@ article>section{
 }
 
 #news-article-alt-1{
+  color: black;
   grid-row: 2;
   grid-column: 1/5;
 }
@@ -555,6 +561,8 @@ float: left;
     width: 760px;
   }
 
+
+
   .nav .menu-btn:checked ~ .menu{
     background-color: transparent;
     height:70px;
@@ -566,7 +574,6 @@ float: left;
     float:right;
     opacity: 1;
   }
-
   .menu #language-se{
     font-size: inherit;
     margin-top: : 0px;

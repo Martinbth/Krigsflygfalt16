@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=500">
     <meta charset="utf-8">
     <title>Krigsflygfalt 16</title>
-    <link rel="stylesheet" type="text/css" href="../resources/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Stardos+Stencil" rel="stylesheet">
-<script src="../resources/js/script.js"></script>
+<script src="resources/js/script.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=initMap" async defer
       ></script>
 
@@ -26,68 +26,59 @@
     </header>
       <nav role="navigation" class="nav">
         <a href="index.html" class="logo">
-          <img alt="krigsflygfält 16 logo" src="../resources/media/logo_yellow.png" />
+          <img alt="krigsflygfält 16 logo" src="resources/media/logo_yellow.png" />
         </a>
         <input class="menu-btn" type="checkbox" id="menu-btn" onclick="noneScroll()" />
-        <label class="menu-icon" for="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span id="label-desc">Meny</span>
           <span class="nav-icon"></span>
         </label>
         <ul class="menu">
-                <li><a href="historia.html" id="active-site">Historia</a></li>
+                <li><a href="historia.html">Historia</a></li>
                 <li><a href="#">Aktiviteter</a></li>
-                <li><a href="hitta-hit.html">Hitta hit</a></li>
+                <li><a href="#" id="active-site">Hitta hit</a></li>
                 <li role="separator" class="divider"></li>
-                <li id="language-se"><a href="../se/index.html" id="active-language">Svenska</a></li>
+                <li id="language-se"><a href="index.html" id="active-language">Svenska</a></li>
                 <li id="language-en"><a href="#">English</a></li>
         </ul>
       </nav>
 
     <main>
-      <article role="hero" id="article-hero-historia">
+      <article role="hero" id="article-hero-hittahit">
         <section class="section-hero">
-
-              <span class="hero-txt">
-                <h1>Historiska dokument</h1>
-                <h2></h2>
-              </span>
-            </section>
-
       </article>
 
       <article role="Hitta hit" id="article-news-alt">
         <section role="Hitta hit" class="section-news">
           <span class="section-titel-alt">
-            <h1>Historiska dokument</h1>
-            <h2>När anläggandet av krigsflygfälten runt om i landet startade var det något som skulle ske i största hemlighet. Flygvörvaltningens föreskrifter i sekretesshänseende meddelades berörda entreprenörer i en skrivelse.
-Vid arbetsplats nr 16 där Aktiebolaget Vägförbättringar utförde arbetena inträffade ett fall som Säkerhetschefen översände till chefen för flygvapnet för ett yttrande. Entreprenören avgav följande rapport till Flygstaben över det inträffade.</h2>
+            <h1>Hitta till Krigsflygfält 16</h1>
+            <h2>Krigsflygfält 16 ligger i Brattforsheden lokerat mellan Filipstad och Karlstad. Hit tar du dig lättast med bil eller cykel. Välkommen!</h2>
           </span>
 
           <article id="news-article-alt-1">
-          <span id="news-article-txt-alt">
+          <span class="news-article-txt-alt">
             <h2>Bil</h2>
-            <h3><b>Från Karlstad</b> väg 63 mot Filipstad (ca 40 km) > 6 km norr Lindfors avtagsväg till höger > Krigsflygfält 2 km > Flygplats 2 km.
-            <h3><b>Från Filipstad</b>  väg 63 mot  Karlstad (ca 18 km) > 7,5 km söder Brattfors avtagsväg till vänster > Krigsflygfält 2 km.Flygplats 2 km.<br>
+            <h3><strong>Från Karlstad</strong> väg 63 mot Filipstad (ca 40 km) > 6 km norr Lindfors avtagsväg till höger > Krigsflygfält 2 km > Flygplats 2 km.
+
+            <h3><strong>Från Filipstad</strong>  väg 63 mot  Karlstad (ca 18 km) > 7,5 km söder Brattfors avtagsväg till vänster > Krigsflygfält 2 km.Flygplats 2 km.<br>
               Parkeringsplatser finns utanför entrén från sjösidan. Parkeringsplatser för rörelsehindrade finns utanför huvudentrén och entrén från sjösidan. Taxi kan köra ända fram till båda entréerna.</h3>
           </span>
 
-          <span id="news-article-txt-alt">
+          <span class="news-article-txt-alt">
             <h2>Cykel</h2>
             <h3>Parkeringsplatser finns utanför entrén från sjösidan. Parkeringsplatser för rörelsehindrade finns utanför huvudentrén och entrén från sjösidan. Taxi kan köra ända fram till båda entréerna.</h3>
           </span>
 
-          <span id="news-article-txt-alt">
+          <span class="news-article-txt-alt">
             <h2>Buss</h2>
             <h3>Parkeringsplatser finns utanför entrén från sjösidan. Parkeringsplatser för rörelsehindrade finns utanför huvudentrén och entrén från sjösidan. Taxi kan köra ända fram till båda entréerna.</h3>
           </span>
 
           </article>
         <article id="news-article-alt-2">
-          <img alt="krigsflygfält 16 logo" src="../resources/media/googlemaps.png" />
+          <img alt="krigsflygfält 16 logo" src="resources/media/googlemaps.png" />
         <a href="https://www.google.com/maps/search/?api=1&zoom=12&query=brattforshedens+flygplats"> Vidare till Google maps &#8594; </a>
           </article>
-
-          </article>
-        </article>
+      </article>
     </main>
 
 
@@ -97,7 +88,7 @@ Vid arbetsplats nr 16 där Aktiebolaget Vägförbättringar utförde arbetena in
         <section class="section-footer">
           <div>
             <a id="footer-logo" href="index.html" class="logo">
-              <img alt="krigsflygfält 16 logo" src="../resources/media/logo_white.png" />
+              <img alt="krigsflygfält 16 logo" src="resources/media/logo_white.png" />
             </a>
           </div>
           <span id="footer-article-1">
